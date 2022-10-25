@@ -37,8 +37,6 @@ header {
 .h-container {
     display: flex;
     align-items: center;
-    border-bottom-left-radius: 0.8rem;
-    border-bottom-right-radius: 0.8rem;
     background-color: rgb(150, 150, 150);
     width: 100%;
     justify-content: space-between;
