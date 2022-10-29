@@ -155,8 +155,8 @@ footer {
 
 .button {
     background-color: white;
-    border-radius: 0.2rem;
-    padding: 0.3rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
     box-shadow: 0.188rem 0.188rem black;
     color: black;
 }
