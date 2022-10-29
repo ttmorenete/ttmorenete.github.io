@@ -8,6 +8,10 @@ html {
     overflow-y: scroll;
 }
 
+body {
+    margin: 0;
+}
+
 a {
     text-decoration: none;
 }
@@ -25,9 +29,9 @@ h1 {
 /* HEADER */
 
 header {
-    position: fixed;
+    position: sticky;
     width: 100%;
-    height: 64px;
+    height: 4rem;
     top: 0;
     left: 0;
     align-items: center;
@@ -61,33 +65,12 @@ header {
     margin: 1rem;
 }
 
-/* Buttons */
-
-.button {
-    background-color: white;
-    border-radius: 0.2rem;
-    padding: 0.3rem;
-    box-shadow: 3px 3px black;
-    color: black;
-}
-
-.button:hover {
-    background-color: goldenrod;
-    box-shadow: 5px 5px black;
-    transition: background-color ease-in 100ms,
-                box-shadow ease-in 100ms;
-}
-
-.button:active {
-    text-decoration: none;
-}
-
 /* FOOTER */
 
 footer {
     background-color: rgb(148, 148, 148);
     width: 100%; 
-    height: 96px;
+    height: 6.5rem;
     position: absolute;
     top: 1932px;
     left: 0;
@@ -96,8 +79,29 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    line-height: 30px;
+    line-height: 1.875rem;
     color: white;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 1.25rem;
+}
+
+/* Buttons */
+
+.button {
+    background-color: white;
+    border-radius: 0.2rem;
+    padding: 0.3rem;
+    box-shadow: 0.188rem 0.188rem black;
+    color: black;
+}
+
+.button:hover {
+    background-color: goldenrod;
+    box-shadow: 0.313rem 0.313rem black;
+    transition: background-color ease-in 100ms,
+                box-shadow ease-in 100ms;
+}
+
+.button:active {
+    text-decoration: none;
 }

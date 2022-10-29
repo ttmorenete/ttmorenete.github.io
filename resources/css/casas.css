@@ -8,6 +8,10 @@ html {
     overflow-y: scroll;
 }
 
+body {
+    margin: 0;
+}
+
 a {
     text-decoration: none;
 }
@@ -25,9 +29,9 @@ h1 {
 /* HEADER */
 
 header {
-    position: fixed;
+    position: sticky;
     width: 100%;
-    height: 64px;
+    height: 4rem;
     top: 0;
     left: 0;
     align-items: center;
@@ -79,12 +83,13 @@ header {
 .img-container {
     display: block;
     max-width: 55%;
+    height: 90%;
     margin: 0 1rem;
 }
 
 .img-c {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 0.6rem;
 }
 
@@ -95,35 +100,55 @@ header {
 }
 
 .c-1 {
-    position: absolute;
-    top: 100px;
+    position: relative;
+    top: 2.25rem;
     left: 0;
-    height: 520px;
+    height: 32.25rem;
     background-color: whitesmoke;
 }
 
 .c-2 {
-    position: absolute;
-    top: 620px;
+    position: relative;
+    top: 2.25rem;
     left: 0;
-    height: 520px;
+    height: 32.5rem;
     flex-direction: row-reverse;
 }
 
 .c-3 {
-    position: absolute;
-    top: 1140px;
+    position: relative;
+    top: 2.25rem;
     left: 0;
-    height: 520px;
+    height: 32.5rem;
     background-color: whitesmoke;
 }
 
 .c-4 {
-    position: absolute;
-    top: 1660px;
+    position: relative;
+    top: 2.25rem;
     left: 0;
-    height: 520px;
+    height: 32.5rem;
     flex-direction: row-reverse;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(148, 148, 148);
+    width: 100%; 
+    height: 6.5rem;
+    position: relative;
+    top: 2.25rem;
+    left: 0;
+    z-index: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.875rem;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.25rem;
 }
 
 /* Buttons */
@@ -132,13 +157,13 @@ header {
     background-color: white;
     border-radius: 0.2rem;
     padding: 0.3rem;
-    box-shadow: 3px 3px black;
+    box-shadow: 0.188rem 0.188rem black;
     color: black;
 }
 
 .button:hover {
     background-color: goldenrod;
-    box-shadow: 5px 5px black;
+    box-shadow: 0.313rem 0.313rem black;
     transition: background-color ease-in 100ms,
                 box-shadow ease-in 100ms;
     cursor: pointer;
@@ -146,24 +171,4 @@ header {
 
 .button:active {
     text-decoration: none;
-}
-
-/* FOOTER */
-
-footer {
-    background-color: rgb(148, 148, 148);
-    width: 100%; 
-    height: 96px;
-    position: absolute;
-    top: 2180px;
-    left: 0;
-    z-index: 6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    line-height: 30px;
-    color: white;
-    font-weight: bolder;
-    font-size: 20px;
 }
