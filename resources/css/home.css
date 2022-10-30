@@ -78,13 +78,14 @@ header {
     align-items: center;
     z-index: 9;
     display: flex;
+    background: url(/resources/css/2diamondhands.jpg) center center/cover no-repeat;
 }
 
 .f-container {
     height: 100%;
     width: 100%;
     display: flex;
-    background: url(/resources/css/2diamondhands.jpg) center center/cover no-repeat;
+   
     align-items: flex-end;
     justify-content: center;
 }
